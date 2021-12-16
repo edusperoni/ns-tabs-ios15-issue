@@ -1,13 +1,25 @@
-<TabView androidTabsPosition="bottom">
-    <TabViewItem title="Home" >
-        <Frame defaultPage="home/home-items-page" />
-    </TabViewItem>
+<Page xmlns:mdt="@nativescript-community/ui-material-tabs">
+    <mdt:MDTabs selectedIndex="1">
+        <mdt:MDTabStripItem>
+            <Label text="Home"></Label>
 
-    <TabViewItem title="Browse" >
-        <Frame defaultPage="browse/browse-page" />
-    </TabViewItem>
+        </mdt:MDTabStripItem>
+        <mdt:MDTabStripItem>
+            <Label text="Account"></Label>
+        </mdt:MDTabStripItem>
+        <mdt:MDTabStripItem>
+            <Label text="Search"></Label>
+        </mdt:MDTabStripItem>
+        <mdt:MDTabContentItem>
+            <Frame defaultPage="home/home-items-page" />
+        </mdt:MDTabContentItem>
 
-    <TabViewItem title="Search" >
-        <Frame defaultPage="search/search-page" />
-    </TabViewItem>
-</TabView>
+        <mdt:MDTabContentItem>
+            <Frame defaultPage="browse/browse-page" />
+        </mdt:MDTabContentItem>
+
+        <mdt:MDTabContentItem>
+            <Frame defaultPage="search/search-page" />
+        </mdt:MDTabContentItem>
+    </mdt:MDTabs>
+</Page>
