@@ -1,25 +1,27 @@
 <Page xmlns:mdt="@nativescript-community/ui-material-tabs">
-    <mdt:MDTabs selectedIndex="1">
-        <mdt:MDTabStripItem>
-            <Label text="Home"></Label>
+    <mdt:Tabs selectedIndex="0">
+        <mdt:TabStrip>
+            <mdt:TabStripItem>
+                <Label text="Home"></Label>
 
-        </mdt:MDTabStripItem>
-        <mdt:MDTabStripItem>
-            <Label text="Account"></Label>
-        </mdt:MDTabStripItem>
-        <mdt:MDTabStripItem>
-            <Label text="Search"></Label>
-        </mdt:MDTabStripItem>
-        <mdt:MDTabContentItem>
+            </mdt:TabStripItem>
+            <mdt:TabStripItem>
+                <Label text="Account"></Label>
+            </mdt:TabStripItem>
+            <mdt:TabStripItem>
+                <Label text="Search"></Label>
+            </mdt:TabStripItem>
+        </mdt:TabStrip>
+        <mdt:TabContentItem>
             <Frame defaultPage="home/home-items-page" />
-        </mdt:MDTabContentItem>
+        </mdt:TabContentItem>
 
-        <mdt:MDTabContentItem>
+        <mdt:TabContentItem>
             <Frame defaultPage="browse/browse-page" />
-        </mdt:MDTabContentItem>
+        </mdt:TabContentItem>
 
-        <mdt:MDTabContentItem>
+        <mdt:TabContentItem>
             <Frame defaultPage="search/search-page" />
-        </mdt:MDTabContentItem>
-    </mdt:MDTabs>
+        </mdt:TabContentItem>
+    </mdt:Tabs>
 </Page>
