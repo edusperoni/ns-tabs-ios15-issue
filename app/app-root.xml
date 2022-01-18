@@ -2,11 +2,7 @@
     <mdt:Tabs selectedIndex="0" loaded="tabLoaded">
         <mdt:TabStrip>
             <mdt:TabStripItem>
-                <StackLayout>
-                    <Label text="Home"></Label>
-                    <Button text="changeTab" tap="changeTab"></Button>
-                </StackLayout>
-
+                <Label text="Home"></Label>
             </mdt:TabStripItem>
             <mdt:TabStripItem>
                 <Label text="Account"></Label>
@@ -16,7 +12,10 @@
             </mdt:TabStripItem>
         </mdt:TabStrip>
         <mdt:TabContentItem>
-            <Frame defaultPage="home/home-items-page" />
+            <GridLayout rows="auto,*">
+                <Button row="0" text="changeTab" tap="changeTab"></Button>
+                <Frame row="1" defaultPage="home/home-items-page" />
+            </GridLayout>
         </mdt:TabContentItem>
 
         <mdt:TabContentItem>
