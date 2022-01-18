@@ -1,8 +1,11 @@
 <Page xmlns:mdt="@nativescript-community/ui-material-tabs">
-    <mdt:Tabs selectedIndex="0">
+    <mdt:Tabs selectedIndex="0" loaded="tabLoaded">
         <mdt:TabStrip>
             <mdt:TabStripItem>
-                <Label text="Home"></Label>
+                <StackLayout>
+                    <Label text="Home"></Label>
+                    <Button text="changeTab" tap="changeTab"></Button>
+                </StackLayout>
 
             </mdt:TabStripItem>
             <mdt:TabStripItem>
